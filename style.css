@@ -10,7 +10,7 @@
 }
 
 @keyframes saturate {
-  0 {
+  0% {
     filter: saturate(1);
   }
   95% {
