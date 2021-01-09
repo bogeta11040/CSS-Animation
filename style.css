@@ -1,0 +1,82 @@
+@keyframes pulse {
+  from {
+    transform: scale(0.2, 0.2);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 0.20;
+  }
+}
+
+@keyframes saturate {
+  0 {
+    filter: saturate(1);
+  }
+  95% {
+filter: saturate(0);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #050210;
+}
+
+.krug1 {
+  position: relative;
+  background-image: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  top: 100px;
+  animation-name: rotate;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.krug1::after {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  content: '';
+  background-color: #050210;
+  animation-name: saturate;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+}
+
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+  filter: blur(60px);
+}
+
+.krug2 {
+  position: absolute;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-color: #0b0524;
+  z-index: 100;
+  margin: 25px;
+  animation-name: pulse;
+  animation-duration: 1.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
