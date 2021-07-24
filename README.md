@@ -2,7 +2,6 @@
 
 Circle animation that demonstrates powers of CSS(3). Made with keyframes, various 2D animation techniques and pseudo-elements.
 
-![image](https://github.com/bogeta11040/CSS-Animation/blob/main/gif.gif?raw=true)
 
 ## Built With
 
